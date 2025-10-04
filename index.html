@@ -1,348 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio_Siddharth_Gautam</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="Siddharth's site.css" />
-    <link rel="stylesheet" href="mediaQueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo" title="Portfolio by Siddharth Gautam..">.folio</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about" >About</a></li>
-          <li><a href="#experience" >Experience</a></li>
-          <li><a href="#projects" >Projects</a></li>
-          <li><a href="#contact" >Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Siddharth Gautam</title>
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="Siddharth's site.css" />
+  <link rel="stylesheet" href="mediaQueries.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="desktop-nav">
+    <div class="logo" title="Portfolio by Siddharth Gautam">.folio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">.folio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">.folio</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="aprofile" src="assets/profile.jpg" alt="Siddharth's Photo" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Siddharth Gautam</h1>
+      <p class="section__text__p2">Full-Stack Web Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('assets/Resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
       </div>
-    </nav>
-    <section id="profile">
+      <div id="socials-container">
+        <img src="assets/linkedin_1384014.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/siddharth-gautam-a01732230'" />
+        <img src="assets/github_2111432.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/SIDDHARTH77106'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
       <div class="section__pic-container">
-        <img class="aprofile" src="assets/profile.jpg" alt="Picture" />
+        <img src="assets/teaching.jpg" alt="About Image" class="about-pic" />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Siddharth Gautam</h1>
-        <p class="section__text__p2">Web App Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('assets/SIDDHARTH GAUTAM.pdf')"
-          >
-            Download CV
-          </button>
-        <button class="btn btn-color-1" onclick="location.href='assets/SIDDHARTH GAUTAM.pdf'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-          
-            src="assets/linkedin_1384014.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/siddharth-gautam-a01732230'"
-            
-          />
-          <img
-          
-            src="assets/github_2111432.png"
-            alt="My Github profile"
-            class="Github icon"
-            target="_blank"
-            onclick="location.href='https://github.com/SIDDHARTH77106'" 
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about" style="margin-top: 7%;">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="assets/teaching.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container" data-aos="zoom-out-up">
-              <img
-                src="assets/certificate_3885345.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h2>Experience</h2>
-              <p>Fresher <br />Website Developer</p>
-            </div>
-            <div class="details-container" data-aos="zoom-out-up">
-              <img
-                src="assets/education_3197910.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelors Degree<br/>Electronics & communication Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              As a electronics & communication engineer I am excited to embark on a journey of innovation and contribution. I have a talent, for transforming ideas into solutions. Coding problem solving and keeping up with the technology trends are my passions. I am eager to collaborate learn and develop my skills in order to create efficient Website
-               solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="assets/down-arrow_2985149.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container" data-aos="zoom-out-up">
-            <h2 class="experience-sub-title">Programming Language</h2>
-            <div class="article-container" >
-              <article>
-                <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Beginner</p>
-                </div>
-                <img
-                  src="assets/check.png"\
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React.js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                
-              </article>
-              <article>
-                
-                <!-- <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Structure and Algo.</h3>
-                  <p>Intermediate</p>
-                </div> -->
-              </article>
-              <article>
-                
-              </article>
-            </div>
+            <img src="assets/certificate_3885345.png" alt="Experience Icon" class="icon" />
+            <h2>Experience</h2>
+            <p>Fresher<br />Full-Stack Developer</p>
           </div>
           <div class="details-container" data-aos="zoom-out-up">
-            <h2 class="experience-sub-title">Front-end Developer</h2>
-            <div class="article-container">
-              <article>
-                <!-- <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSql</h3>
-                  <p>Basic</p>
-
-                </div> -->
-                <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-
-              </article>
-              <article>
-                <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java Script</h3>
-                  <p>Beginner</p>
-                </div>
-                
-              </article>
-              <article>
-                <img
-                  src="assets/check.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-            </div>
+            <img src="assets/education_3197910.png" alt="Education Icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor's Degree<br />Electronics & Communication Engineering</p>
           </div>
         </div>
-      </div>
-      <img
-        src="assets/down-arrow_2985149.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container" data-aos="zoom-out-up">
-            <div class="article-container">
-              <img
-                src="assets/to_do_listProject1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One_<br> Amazon Clone </h2>
-            <div class="btn-container-projects">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SIDDHARTH77106'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://amznclon.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container" data-aos="zoom-out-up">
-            <div class="article-container" >
-              <img
-                src="assets/portfolioProject2.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two_<br>PortFolio Website</h2>
-            <div class="btn-container-projects">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SIDDHARTH77106/Portfolio_Website'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://sidharthgautam.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-
-           <div class="details-container color-container" data-aos="zoom-out-up">
-            <div class="article-container" >
-              <img
-                src="assets/game.jpeg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three_<br>Rock_Paper_Scissors Game</h2>
-            <div class="btn-container-projects">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SIDDHARTH77106/Rock_paper_scissors'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://siddharth77106.github.io/Rock_paper_scissors/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          
+        <div class="text-container">
+          <p>
+            I'm an enthusiastic Electronics & Communication Engineer with a passion for full-stack web development. I love building scalable applications using modern technologies like Node.js, Express, MongoDB, and MySQL.
+          </p>
         </div>
       </div>
-      <img
-        src="assets/down-arrow_2985149.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      />
-    </section>
-    <section id="contact">
+    </div>
+    <img src="assets/down-arrow_2985149.png" alt="Scroll Down" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+
+  <div class="experience-details-container">
+    
+    <!-- Full Stack Developer -->
+    <div class="details-container" data-aos="zoom-out-up">
+      <h2 class="experience-sub-title">Full-Stack Developer</h2>
+      <div class="article-container">
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>Node.js & Express.js</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>MongoDB</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>MySQL</h3><p>Basic</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>REST APIs</h3><p>Intermediate</p></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Frontend Developer -->
+    <div class="details-container" data-aos="zoom-out-up">
+      <h2 class="experience-sub-title">Frontend Developer</h2>
+      <div class="article-container">
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>HTML</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>CSS</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>JavaScript</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>React.js</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>GitHub</h3><p>Intermediate</p></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="details-container" data-aos="zoom-out-up">
+      <h2 class="experience-sub-title">Programming Languages</h2>
+      <div class="article-container">
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>C++</h3><p>Intermediate</p></div>
+        </article>
+        <article>
+          <img src="assets/check.png" class="icon" />
+          <div><h3>Java</h3><p>Basic</p></div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+
+  <img src="assets/down-arrow_2985149.png" alt="Scroll Down" class="icon arrow" onclick="location.href='#projects'" />
+</section>
+
+  <!-- Projects Section -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card" data-aos="zoom-in-up">
+      <img src="assets/to_do_listProject1.png" alt="Amazon Clone" class="project-img" />
+      <h2>Amazon Clone</h2>
+      <p class="project-status">Fully Functional Frontend Clone</p>
+      <div class="btn-container">
+        <button class="project-btn" onclick="location.href='https://github.com/SIDDHARTH77106'">GitHub</button>
+        <button class="project-btn" onclick="location.href='https://amznclon.netlify.app'">Live Demo</button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" data-aos="zoom-in-up">
+      <img src="assets/portfolioProject2.jpg" alt="Portfolio Site" class="project-img" />
+      <h2>Portfolio Website</h2>
+      <p class="project-status">Responsive Personal Portfolio</p>
+      <div class="btn-container">
+        <button class="project-btn" onclick="location.href='https://github.com/SIDDHARTH77106'">GitHub</button>
+        <button class="project-btn" onclick="location.href='https://sidharthgautam.netlify.app'">Live Demo</button>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card" data-aos="zoom-in-up">
+      <img src="assets/game.jpeg" alt="Rock Paper Scissors" class="project-img" />
+      <h2>Rock Paper Scissors Game</h2>
+      <p class="project-status">JavaScript Based Interactive Game</p>
+      <div class="btn-container">
+        <button class="project-btn" onclick="location.href='https://github.com/SIDDHARTH77106/Rock_paper_scissors'">GitHub</button>
+        <button class="project-btn" onclick="location.href='https://siddharth77106.github.io/Rock_paper_scissors/'">Live Demo</button>
+      </div>
+    </div>
+
+    <!-- Jay Construction -->
+    <div class="project-card" data-aos="zoom-in-up">
+      <img src="assets/jay-logo.png" alt="Jay Construction" class="project-img" />
+      <h2>Jay Construction Website</h2>
+      <p class="project-status">Currently Working — Full Stack Project</p>
+      <div class="btn-container">
+        <button class="project-btn" onclick="location.href='https://github.com/SIDDHARTH77106/JAY-CONSTRUCTION'">GitHub</button>
+      </div>
+    </div>
+
+    <!-- Sports Networking Platform -->
+    <div class="project-card" data-aos="zoom-in-up">
+      <img src="assets/sports.jpg" alt="Sports App" class="project-img" />
+      <h2>Sports Networking Platform</h2>
+      <p class="project-status">In Development — React + Node.js</p>
+      <div class="btn-container">
+        <button class="project-btn" onclick="location.href='https://github.com/SIDDHARTH77106/SPORTS-LINK'">GitHub</button>
+      </div>
+    </div>
+  </div>
+
+  <img src="assets/down-arrow_2985149.png" alt="Scroll" class="icon arrow" onclick="location.href='#contact'" />
+</section>
+
+ <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container" data-aos="zoom-out-up">
@@ -363,8 +253,8 @@
           <p onclick="location.href='https://www.linkedin.com/in/siddharth-gautam-a01732230'">LinkedIn</p>
         </div>
       </div>
-    </section>
-    <footer>
+
+       <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
@@ -377,6 +267,8 @@
       </nav>
       <p>Copyright &#169; 2024 Siddharth Gautam . All Rights Reserved.</p>
     </footer>
+    </section>
+   
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="Siddharth's site.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
